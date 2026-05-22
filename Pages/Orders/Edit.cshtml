@@ -1,0 +1,49 @@
+@page
+@model ASPCRUDAssignment.Pages.Orders.EditModel
+
+<h2>Edit Order</h2>
+
+<form method="post">
+
+    <input type="hidden" asp-for="Order.Id" />
+
+    <div>
+        <label>Customer Name</label>
+        <input asp-for="Order.CustomerName" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Product Name</label>
+        <input asp-for="Order.ProductName" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Quantity</label>
+        <input asp-for="Order.Quantity" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Price</label>
+        <input asp-for="Order.Price" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Order Date</label>
+        <input asp-for="Order.OrderDate" type="date" />
+    </div>
+
+    <br />
+
+    <button type="submit">Update</button>
+
+    <a asp-page="Index">Cancel</a>
+
+</form>

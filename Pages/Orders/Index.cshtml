@@ -1,0 +1,38 @@
+@page
+@model IndexModel
+
+<h2>Orders List</h2>
+
+<a asp-page="Create">Add New Order</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.Orders)
+        {
+            <tr>
+                <td>@item.CustomerName</td>
+                <td>@item.ProductName</td>
+                <td>@item.Quantity</td>
+                <td>@item.Price</td>
+                <td>@item.OrderDate</td>
+
+                <td>
+                    <a asp-page="Edit" asp-route-id="@item.Id">Edit</a>
+
+                    <a asp-page="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

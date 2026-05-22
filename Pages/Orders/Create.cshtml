@@ -1,0 +1,25 @@
+@page
+@model CreateModel
+
+<h2>Create Order</h2>
+
+<form method="post">
+
+    <input asp-for="Order.CustomerName" placeholder="Customer Name" />
+    <br />
+
+    <input asp-for="Order.ProductName" placeholder="Product Name" />
+    <br />
+
+    <input asp-for="Order.Quantity" placeholder="Quantity" />
+    <br />
+
+    <input asp-for="Order.Price" placeholder="Price" />
+    <br />
+
+    <input asp-for="Order.OrderDate" type="date" />
+    <br />
+
+    <button type="submit">Save</button>
+
+</form>
