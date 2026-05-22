@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASPCRUDAssignment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb4882343b00b662d6cddb03a5bde8ef73df6008")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f8fab4bb725e000c8b0fa1a4716e9d33ae7227b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASPCRUDAssignment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASPCRUDAssignment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
